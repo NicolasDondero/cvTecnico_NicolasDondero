@@ -1,4 +1,4 @@
-# CV Web - Tu Nombre
+# CV Web - Diego Nicolas Dondero Scarponi
 Este proyecto es un CV técnico
 desarrollado en HTML y CSS.
 ## Descripción
