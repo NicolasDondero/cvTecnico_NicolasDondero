@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Nicolas Dondero Scarponi | CV Técnico</title>
+    <meta name="description" content="Diego Nicolas Dondero Scarponi — Desarrollador Full Stack Junior. Python, Django, React, TypeScript y Vite.">
+    <title>Diego Nicolas Dondero Scarponi | Desarrollador Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#perfil" class="nav-logo">DD<span>.</span></a>
+            <div class="nav-links">
+                <a href="#tecnologias">Stack</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
     <header>
         <div class="header-content">
+            <span class="badge">Disponible para nuevas oportunidades</span>
             <h1>Diego Nicolas <span>Dondero Scarponi</span></h1>
-            <p>Desarrollador Backend | Python & Django</p>
+            <p class="header-role">Desarrollador Full Stack Junior</p>
+            <p class="header-sub">Python &amp; Django en el backend · React, TypeScript y Vite en el frontend</p>
+            <div class="header-cta">
+                <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+                <a href="#contacto" class="btn-secondary">Contactar</a>
+            </div>
         </div>
     </header>
 
@@ -19,47 +41,155 @@
         <section id="perfil" class="card">
             <h2>Perfil Profesional</h2>
             <p>
-                Desarrollador enfocado en la creación de soluciones eficientes y escalables utilizando Python y Django. 
-                Apasionado por la arquitectura de bases de datos y el código limpio, busco optimizar procesos 
-                tecnológicos mediante el uso de herramientas modernas y buenas prácticas de desarrollo.
+                Desarrollador Full Stack junior enfocado en construir aplicaciones web completas: APIs REST con
+                Python y Django del lado del servidor, e interfaces modernas con React, TypeScript y Vite del
+                lado del cliente. Trabajo con bases de datos relacionales y no relacionales (SQL, MongoDB) y
+                herramientas de contenedores como Docker. Aprendo rápido, escribo código limpio y busco aportar
+                soluciones eficientes en equipos de desarrollo colaborativos.
             </p>
         </section>
 
         <section id="tecnologias">
             <h2>Tecnologías</h2>
-            <div class="tech-grid">
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-                <span class="tech-tag">SQL</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Django Framework</span>
+
+            <div class="tech-group">
+                <h3>Frontend</h3>
+                <div class="tech-grid">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Vite</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">React Router</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+            </div>
+
+            <div class="tech-group">
+                <h3>Backend</h3>
+                <div class="tech-grid">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Redis</span>
+                </div>
+            </div>
+
+            <div class="tech-group">
+                <h3>Herramientas</h3>
+                <div class="tech-grid">
+                    <span class="tech-tag">Git &amp; GitHub</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Context API</span>
+                </div>
             </div>
         </section>
 
         <section id="proyectos">
             <h2>Proyectos destacados</h2>
-            
+
             <div class="proyecto-card">
                 <div class="proyecto-info">
-                    <h3>CV Técnico - NicolasDondero</h3>
-                    <p>CV web desarrollado con HTML semántico y CSS3. Optimizado para alto rendimiento y estética moderna.</p>
-                    <a href="https://github.com/NicolasDondero/cvTecnico_NicolasDondero" target="_blank" class="btn-primary">Ver en GitHub</a>
+                    <div class="proyecto-tags">
+                        <span class="mini-tag">React</span>
+                        <span class="mini-tag">TypeScript</span>
+                        <span class="mini-tag">Vite</span>
+                        <span class="mini-tag">Docker</span>
+                    </div>
+                    <h3>Anti-Social Net</h3>
+                    <p>Red social full stack (proyecto grupal, UNAHUR) con feed de publicaciones, comentarios,
+                        etiquetas, perfiles de usuario y tema claro/oscuro. Frontend en React 19 + TypeScript + Vite
+                        con Context API para autenticación y rutas protegidas; consume una API REST propia
+                        (Node.js, MongoDB y Redis sobre Docker).</p>
+                    <a href="https://github.com/CristRamirez/ciu-anti-social" target="_blank" class="btn-primary">Ver en GitHub</a>
                 </div>
             </div>
 
             <div class="proyecto-card">
                 <div class="proyecto-info">
-                    <h3>Gestor de turnos - NicolasDondero</h3>
-                    <p>Gestor de turnos médicos integrando HTML, CSS, Python y Django Framework para una gestión eficiente de citas.</p>
+                    <div class="proyecto-tags">
+                        <span class="mini-tag">React</span>
+                        <span class="mini-tag">Vite</span>
+                        <span class="mini-tag">Bootstrap</span>
+                    </div>
+                    <h3>La Mitad Más Uno · Tienda Online</h3>
+                    <p>SPA de e-commerce (proyecto grupal, UNAHUR) con catálogo filtrable, carrito persistido en
+                        localStorage, rutas dinámicas por producto y formulario de compra con validaciones.
+                        Construida con React, React Router y React Bootstrap sobre Vite.</p>
+                    <a href="https://github.com/CristRamirez/tienda-parcial-ciu" target="_blank" class="btn-primary">Ver en GitHub</a>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="proyecto-info">
+                    <div class="proyecto-tags">
+                        <span class="mini-tag">Python</span>
+                        <span class="mini-tag">Django</span>
+                    </div>
+                    <h3>Gestor de turnos</h3>
+                    <p>Gestor de turnos médicos integrando HTML, CSS, Python y Django Framework para una gestión
+                        eficiente de citas.</p>
                     <a href="https://github.com/NicolasDondero/gestor_turnos_proyecto/tree/main" target="_blank" class="btn-primary">Ver en GitHub</a>
                 </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="proyecto-info">
+                    <div class="proyecto-tags">
+                        <span class="mini-tag">HTML5</span>
+                        <span class="mini-tag">CSS3</span>
+                    </div>
+                    <h3>CV Técnico - NicolasDondero</h3>
+                    <p>Este mismo sitio: CV web desarrollado con HTML semántico y CSS3, optimizado para rendimiento
+                        y estética moderna.</p>
+                    <a href="https://github.com/NicolasDondero/cvTecnico_NicolasDondero" target="_blank" class="btn-primary">Ver en GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="card">
+            <h2>Experiencia</h2>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Operario General</h3>
+                    <span class="exp-date">May 2022 – Oct 2022</span>
+                </div>
+                <p class="exp-place">Coppel — Buenos Aires</p>
+            </div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Empleado de Seguridad</h3>
+                    <span class="exp-date">Oct 2022 – Feb 2023</span>
+                </div>
+                <p class="exp-place">Sodimac — Villa Luzuriaga, Buenos Aires</p>
+            </div>
+        </section>
+
+        <section id="formacion" class="card">
+            <h2>Formación</h2>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Tecnicatura Universitaria en Programación</h3>
+                    <span class="exp-date">En curso</span>
+                </div>
+                <p class="exp-place">Universidad Nacional de Hurlingham (UNAHUR)</p>
+            </div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Educación Secundaria Completa</h3>
+                    <span class="exp-date">2013 – 2019</span>
+                </div>
+                <p class="exp-place">Escuela Estatal Secundaria N°33</p>
             </div>
         </section>
 
         <section id="contacto" class="card">
             <h2>Contacto</h2>
             <div class="contacto-links">
-                <p><strong>Email:</strong> nico.donderox@gmail.com</p>
+                <p><strong>Email:</strong> <a href="mailto:nico.donderox@gmail.com">nico.donderox@gmail.com</a></p>
                 <p><strong>GitHub:</strong> <a href="https://github.com/NicolasDondero" target="_blank">github.com/NicolasDondero</a></p>
                 <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/diego-nicolas-dondero-scarponi-b1b514259/" target="_blank">linkedin.com/in/diego-nicolas-dondero-scarponi</a></p>
             </div>
